@@ -1,4 +1,4 @@
-package primitives;
+/*package primitives;
 
 import org.junit.jupiter.api.Test;
 
@@ -33,4 +33,4 @@ class Point3DTest {
     void distance() {
         assertEquals(pt1.distance(pt2) ,(pt1.distanceSquared(pt2))); // distanceSquared = (distance)^2
     }
-}
+}*/
