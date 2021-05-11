@@ -10,7 +10,13 @@ public class Plane implements Geometry {
     // Constructor
     public Plane(Point3D pt1, Point3D pt2, Point3D pt3) {
         _q0 = pt1;
-        _normal = null;
+
+        Vector u = pt2.subtract(pt1);
+        Vector v = pt3.subtract(pt1);
+
+        Vector n = u.crossProduct(v);
+
+        _normal = n.normalize();
     }
 
     //Getters
@@ -24,6 +30,6 @@ public class Plane implements Geometry {
 
     @Override
     public Vector getNormal(Point3D point3D) {
-        return null;
+        return _normal;
     }
 }

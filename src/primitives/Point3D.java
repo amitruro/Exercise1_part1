@@ -1,7 +1,5 @@
 package primitives;
 
-import java.util.Objects;
-
 public class Point3D {
     final Coordinate _x;
     final Coordinate _y;
@@ -60,6 +58,18 @@ public class Point3D {
         if (o == null || getClass() != o.getClass()) return false;
         Point3D point3D = (Point3D) o;
         return _x.equals(point3D._x) && _y.equals(point3D._y) && _z.equals(point3D._z);
+    }
+
+    public Coordinate getX() {
+        return _x;
+    }
+
+    public Coordinate getY() {
+        return _y;
+    }
+
+    public Coordinate getZ() {
+        return _z;
     }
 
     @Override

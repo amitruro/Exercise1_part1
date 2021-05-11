@@ -1,7 +1,5 @@
 package primitives;
 
-import java.util.Objects;
-
 public class Ray {
     final Point3D p0;
     final Vector _dir;
@@ -10,6 +8,14 @@ public class Ray {
     public Ray(Point3D point3D, Vector vector) {
         p0 = point3D;
         _dir = vector.normalized();
+    }
+
+    public Point3D getP0() {
+        return p0;
+    }
+
+    public Vector get_dir() {
+        return _dir;
     }
 
     @Override

@@ -1,4 +1,4 @@
-/*package primitives;
+package primitives;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Point3DTest {
 
     Point3D pt1 = new Point3D(7d, 1.999999999999999999d, 4d);
-    Point3D pt2 = new Point3D(0d, 2d, 4d);
+    Point3D pt2 = new Point3D(7d, 2d, 4d);
 
     @Test
     void testEquals() {
@@ -25,7 +25,7 @@ class Point3DTest {
     @Test
     void distanceSquared() {
         double result = pt1.distanceSquared(pt2);
-        assertEquals(23, result, 20);
+        assertEquals(0, result, 0.01);
         System.out.println(result);
     }
 
@@ -33,4 +33,4 @@ class Point3DTest {
     void distance() {
         assertEquals(pt1.distance(pt2) ,(pt1.distanceSquared(pt2))); // distanceSquared = (distance)^2
     }
-}*/
+}

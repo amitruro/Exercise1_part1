@@ -1,18 +1,19 @@
 package geometries;
 
 import primitives.Point3D;
-import primitives.Vector;
 
-import java.util.ArrayList;
-
-// Constructor
 public class Triangle extends Polygon {
-    public Triangle(Point3D pt1, Point3D pt2, Point3D pt3) {
-        super(pt1, pt2, pt3);
+
+    /* Constructor by Polygon*/
+    private Triangle(Point3D x1,Point3D x2,Point3D x3) {
+        super(x1,x2,x3);
     }
 
     @Override
-    public Vector getNormal(Point3D point3D) {
-        return null;
+    public String toString() {
+        return "Triangle{" +
+                "vertices=" + vertices +
+                ", plane=" + plane +
+                '}';
     }
 }
